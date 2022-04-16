@@ -1,4 +1,8 @@
-﻿
+﻿using System;
+using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace DIALOGS_WF
 {
     partial class Form1
@@ -29,25 +33,27 @@ namespace DIALOGS_WF
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Twin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Twin
             // 
-            this.button1.Location = new System.Drawing.Point(235, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 71);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Twin.Location = new System.Drawing.Point(307, 172);
+            this.Twin.Name = "Twin";
+            this.Twin.Size = new System.Drawing.Size(166, 57);
+            this.Twin.TabIndex = 0;
+            this.Twin.Text = "Twin";
+            this.Twin.UseVisualStyleBackColor = true;
+            this.Twin.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(581, 270);
+            this.Controls.Add(this.Twin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -55,8 +61,22 @@ namespace DIALOGS_WF
         }
 
         #endregion
+        Form2 newForm2;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (newForm2 == null || newForm2.IsDisposed)
+            {
+                newForm2 = new Form2();
+                newForm2.Show();
+                newForm2.Size = this.Size;
+                newForm2.Ok.Location = new System.Drawing.Point(Size.Width / 2 - 100,Size.Height/2);
+                newForm2.Cancel.Location = new System.Drawing.Point(Size.Width / 2 + 100, Size.Height / 2);
+                newForm2.Sib = this;
+            }
 
-        private System.Windows.Forms.Button button1;
+        }
+
+        private System.Windows.Forms.Button Twin;
     }
 }
 
