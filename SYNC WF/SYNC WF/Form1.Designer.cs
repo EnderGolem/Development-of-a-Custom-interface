@@ -46,7 +46,7 @@ namespace SYNC_WF
             this.color1.Size = new System.Drawing.Size(43, 13);
             this.color1.TabIndex = 0;
             this.color1.Text = "Colour1";
-            this.color1.Click += new System.EventHandler(this.label1_Click);
+            this.color1.Click += new System.EventHandler(this.color1_click);
             // 
             // color2
             // 
@@ -56,6 +56,7 @@ namespace SYNC_WF
             this.color2.Size = new System.Drawing.Size(43, 13);
             this.color2.TabIndex = 1;
             this.color2.Text = "Colour2";
+            this.color2.Click += new System.EventHandler(this.color2_click);
             // 
             // color3
             // 
@@ -65,6 +66,7 @@ namespace SYNC_WF
             this.color3.Size = new System.Drawing.Size(43, 13);
             this.color3.TabIndex = 2;
             this.color3.Text = "Colour3";
+            this.color3.Click += new System.EventHandler(this.color3_click);
             // 
             // color4
             // 
@@ -74,6 +76,7 @@ namespace SYNC_WF
             this.color4.Size = new System.Drawing.Size(43, 13);
             this.color4.TabIndex = 3;
             this.color4.Text = "Colour4";
+            this.color4.Click += new System.EventHandler(this.color4_click);
             // 
             // color5
             // 
@@ -83,6 +86,7 @@ namespace SYNC_WF
             this.color5.Size = new System.Drawing.Size(43, 13);
             this.color5.TabIndex = 4;
             this.color5.Text = "Colour5";
+            this.color5.Click += new System.EventHandler(this.color5_click);
             // 
             // color6
             // 
@@ -92,6 +96,7 @@ namespace SYNC_WF
             this.color6.Size = new System.Drawing.Size(43, 13);
             this.color6.TabIndex = 5;
             this.color6.Text = "Colour6";
+            this.color6.Click += new System.EventHandler(this.color6_click);
             // 
             // show
             // 
@@ -124,13 +129,13 @@ namespace SYNC_WF
 
         #endregion
 
-        private System.Windows.Forms.Label color1;
-        private System.Windows.Forms.Label color2;
-        private System.Windows.Forms.Label color3;
-        private System.Windows.Forms.Label color4;
-        private System.Windows.Forms.Label color5;
-        private System.Windows.Forms.Label color6;
-        private System.Windows.Forms.Button show;
+        public System.Windows.Forms.Label color1;
+        public System.Windows.Forms.Label color2;
+        public System.Windows.Forms.Label color3;
+        public System.Windows.Forms.Label color4;
+        public System.Windows.Forms.Label color5;
+        public System.Windows.Forms.Label color6;
+        public System.Windows.Forms.Button show;
     }
 }
 

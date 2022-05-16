@@ -22,16 +22,59 @@ namespace SYNC_WF
             InitializeComponent();
             main = mainer;
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private Color CheckButton(object sender)
         {
+            if ((sender as RadioButton).Name[0] == 'R')
+                return Color.Red;
+            else if ((sender as RadioButton).Name[0] == 'G')
+                return Color.Green;
+            else if ((sender as RadioButton).Name[0] == 'B')
+                return Color.Blue;
+            return Color.Black;
+        }
+        private void red1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!(sender as RadioButton).Checked)
+                return;
+            main.color1.BackColor = CheckButton(sender);
 
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void red2_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (!(sender as RadioButton).Checked)
+                return;
+            main.color2.BackColor = CheckButton(sender);
         }
+
+        private void red3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!(sender as RadioButton).Checked)
+                return;
+            main.color3.BackColor = CheckButton(sender);
+        }
+
+        private void red4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!(sender as RadioButton).Checked)
+                return;
+            main.color4.BackColor = CheckButton(sender);
+        }
+
+        private void red5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!(sender as RadioButton).Checked)
+                return;
+            main.color5.BackColor = CheckButton(sender);
+        }
+
+        private void red6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!(sender as RadioButton).Checked)
+                return;
+            main.color6.BackColor = CheckButton(sender);
+        }
+
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
