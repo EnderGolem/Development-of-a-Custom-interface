@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="color1" Content="Color" HorizontalAlignment="Left" Margin="100,35,0,0" VerticalAlignment="Top" Height="53" Width="191" MouseLeftButtonUp="color1_MouseLeftButtonUp" />
+        <Label x:Name="color2" Content="Color" HorizontalAlignment="Left" Margin="100,88,0,0" VerticalAlignment="Top" Height="53" Width="191" MouseLeftButtonUp="color2_MouseLeftButtonUp"/>
+        <Label x:Name="color3" Content="Color" HorizontalAlignment="Left" Margin="100,141,0,0" VerticalAlignment="Top" Height="53" Width="191" MouseLeftButtonUp="color3_MouseLeftButtonUp"/>
+        <Label x:Name="color4" Content="Color" HorizontalAlignment="Left" Margin="100,194,0,0" VerticalAlignment="Top" Height="53" Width="191" MouseLeftButtonUp="color4_MouseLeftButtonUp"/>
+        <Label x:Name="color5" Content="Color" HorizontalAlignment="Left" Margin="100,247,0,0" VerticalAlignment="Top" Height="53" Width="191" MouseLeftButtonUp="color5_MouseLeftButtonUp"/>
+        <Label x:Name="color6" Content="Color" HorizontalAlignment="Left" Margin="100,300,0,0" VerticalAlignment="Top" Height="53" Width="191" MouseLeftButtonUp="color6_MouseLeftButtonUp"/>
+        <Button x:Name="show" Content="Show" HorizontalAlignment="Left" Margin="433,141,0,0" VerticalAlignment="Top" Width="212" Height="81" Click="show_click"/>
+
     </Grid>
 </Window>

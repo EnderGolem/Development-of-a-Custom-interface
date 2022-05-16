@@ -1,0 +1,73 @@
+﻿<Window x:Class="SYNC_WPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SYNC_WPF"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800"
+        Closing="Window_Closing"
+        >
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="36,49,520,317">
+                <RadioButton x:Name="Red1" Content="Red"
+			                 Margin="10,5" IsChecked="True" Checked="red1_Checked"
+			                />
+                <RadioButton x:Name="Green1" Content="Green"
+			                 Margin="10,5" Checked="red1_Checked"  />
+            <RadioButton x:Name="Blue1" Content="Blue&#xD;&#xA;&#xD;&#xA;"
+                    Margin="10,5" Checked="red1_Checked"  />
+            <Label Content="1&#xD;&#xA;" Margin="0,0,0,23" Width="29"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="277,49,279,317">
+            <RadioButton x:Name="Red2" Content="Red"
+                Margin="10,5" IsChecked="True" Checked="red2_Checked"
+			                />
+            <RadioButton x:Name="Green2" Content="Green"
+                Margin="10,5" Checked="red2_Checked"  />
+            <RadioButton x:Name="Blue2" Content="Blue&#xA;&#xA;"
+                Margin="10,5" Checked="red2_Checked"  />
+            <Label Content="2" Margin="0,0,0,23" Width="29"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="518,49,38,317">
+            <RadioButton x:Name="Red3" Content="Red"
+                Margin="10,5" IsChecked="True" Checked="red3_Checked"
+			                />
+            <RadioButton x:Name="Green3" Content="Green"
+                Margin="10,5" Checked="red3_Checked"  />
+            <RadioButton x:Name="Blue3" Content="Blue&#xA;&#xA;"
+                Margin="10,5" Checked="red3_Checked"  />
+            <Label Content="3&#xA;" Margin="0,0,0,23" Width="29"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="36,190,520,176">
+            <RadioButton x:Name="Red4" Content="Red"
+                Margin="10,5" IsChecked="True" Checked="red4_Checked"
+			                />
+            <RadioButton x:Name="Green4" Content="Green"
+                Margin="10,5" Checked="red4_Checked"  />
+            <RadioButton x:Name="Blue4" Content="Blue&#xA;&#xA;"
+                Margin="10,5" Checked="red4_Checked"  />
+            <Label Content="4&#xD;&#xA;&#xA;" Margin="0,0,0,23" Width="29"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="277,190,279,176">
+            <RadioButton x:Name="Red5" Content="Red"
+                Margin="10,5" IsChecked="True" Checked="red5_Checked"
+			                />
+            <RadioButton x:Name="Green5" Content="Green"
+                Margin="10,5" Checked="red5_Checked"  />
+            <RadioButton x:Name="Blue5" Content="Blue&#xA;&#xA;"
+                Margin="10,5" Checked="red5_Checked"  />
+            <Label Content="5&#xA;" Margin="0,0,0,23" Width="29"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="518,190,38,176">
+            <RadioButton x:Name="Red6" Content="Red"
+                Margin="10,5" IsChecked="True" Checked="red6_Checked"
+			                />
+            <RadioButton x:Name="Green6" Content="Green"
+                Margin="10,5" Checked="red6_Checked"  />
+            <RadioButton x:Name="Blue6" Content="Blue&#xA;&#xA;"
+                Margin="10,5" Checked="red6_Checked"  />
+            <Label Content="6&#xA;" Margin="0,0,0,23" Width="29"/>
+        </StackPanel>
+    </Grid>
+</Window>
