@@ -13,6 +13,9 @@ namespace SYNC_WF
     public partial class Form2 : Form
     {
         Form1 main;
+        public RadioButton[] Reds;
+        public RadioButton[] Greens;
+        public RadioButton[] Blues;
         public Form2()
         {
             InitializeComponent();
@@ -21,6 +24,12 @@ namespace SYNC_WF
         {
             InitializeComponent();
             main = mainer;
+            Reds = new RadioButton[6];
+            Reds[0] = Red1; Reds[1] = Red2; Reds[2] = Red3; Reds[3] = Red4; Reds[4] = Red5; Reds[5] = Red6;
+            Greens = new RadioButton[6];
+            Greens[0] = Green1; Greens[1] = Green2; Greens[2] = Green3; Greens[3] = Green4; Greens[4] = Green5; Greens[5] = Green6;
+            Blues = new RadioButton[6];
+            Blues[0] = Blue1; Blues[1] = Blue2; Blues[2] = Blue3; Blues[3] = Blue4; Blues[4] = Blue5;  Blues[5] = Blue6;
         }
         private Color CheckButton(object sender)
         {
